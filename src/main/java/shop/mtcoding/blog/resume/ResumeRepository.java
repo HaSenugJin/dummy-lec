@@ -13,6 +13,8 @@ import java.util.List;
 public class ResumeRepository {
     private final EntityManager em;
 
+
+
     @Transactional
     public void insertResume(Integer userId, String title, String career, String edu, String area, String position, String intro, String link) {
         String q = """
